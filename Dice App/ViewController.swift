@@ -41,13 +41,13 @@ class ViewController: UIViewController {
             guard timerTest == nil else { return }
 
               timerTest = Timer.scheduledTimer(
-                  timeInterval: TimeInterval(0.3),
+                  timeInterval: TimeInterval(0.1),
                   target: self,
                   selector: #selector(ViewController.randomDice),
                   userInfo: nil,
                   repeats: true)
             
-            statusRoll=true
+            statusRoll = true
         } else {
             buttonProperti.setTitle("Roll", for: .normal)
             timerTest?.invalidate()
@@ -57,4 +57,3 @@ class ViewController: UIViewController {
     }
     
 }
-
