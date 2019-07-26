@@ -14,10 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var rightDice: UIImageView!
     @IBOutlet weak var buttonProperti: UIButton!
     
-    var timerTest : Timer?
-    var statusRoll:Bool = false
-    var randomNumberDice1:Int = 1
-    var randomNumberDice2:Int = 1
+    var timerTest: Timer?
+    var statusRoll: Bool = false
+    var randomNumberDice1: Int = 1
+    var randomNumberDice2: Int = 1
     
     
     
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
             buttonProperti.setTitle("Stop", for: .normal)
             guard timerTest == nil else { return }
 
-              timerTest =  Timer.scheduledTimer(
+              timerTest = Timer.scheduledTimer(
                   timeInterval: TimeInterval(0.3),
                   target: self,
                   selector: #selector(ViewController.randomDice),
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
             buttonProperti.setTitle("Roll", for: .normal)
             timerTest?.invalidate()
             timerTest = nil
-            statusRoll=false
+            statusRoll = false
         }
     }
     
