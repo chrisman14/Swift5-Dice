@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @objc func randomDice(){
+    @objc func randomDice() {
         randomNumberDice1 = Int.random(in: 1...6)
         randomNumberDice2 = Int.random(in: 1...6)
         
