@@ -13,10 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var leftDice: UIImageView!
     @IBOutlet weak var rightDice: UIImageView!
     @IBOutlet weak var buttonProperti: UIButton!
-    var statusRoll:Bool=false
-    var randomNumberDice1:Int=1
-    var randomNumberDice2:Int=1
+    
     var timerTest : Timer?
+    var statusRoll:Bool = false
+    var randomNumberDice1:Int = 1
+    var randomNumberDice2:Int = 1
+    
     
     
     override func viewDidLoad() {
