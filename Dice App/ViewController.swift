@@ -36,28 +36,24 @@ class ViewController: UIViewController {
     }
 
     @IBAction func rollPress(_ sender: UIButton) {
-        if !statusRoll{
+        if !statusRoll {
             buttonProperti.setTitle("Stop", for: .normal)
             guard timerTest == nil else { return }
 
               timerTest =  Timer.scheduledTimer(
                   timeInterval: TimeInterval(0.3),
-                  target      : self,
-                  selector    : #selector(ViewController.randomDice),
-                  userInfo    : nil,
-                  repeats     : true)
+                  target: self,
+                  selector: #selector(ViewController.randomDice),
+                  userInfo: nil,
+                  repeats: true)
+            
             statusRoll=true
-        
-        }else{
+        } else {
             buttonProperti.setTitle("Roll", for: .normal)
             timerTest?.invalidate()
             timerTest = nil
             statusRoll=false
-            
         }
-        
-
-        
     }
     
 }
