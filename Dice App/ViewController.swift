@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     var randomNumberDice1:Int=1
     var randomNumberDice2:Int=1
     var timerTest : Timer?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         randomDice()
